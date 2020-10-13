@@ -1,0 +1,28 @@
+{{> header}}
+{{> links}}
+ {{#each articulos}}
+    <div class="alert alert-success">
+  <strong>Actulizar!</strong> Artitculos
+</div>
+
+<form class"form-inline" method="post" action="/catalago/modificacion">
+ <div class="input-group">
+ <span class="input-group-addon" >Artitculo</span>
+ <input class="form-control" type="text" name="descripcion" value="{{descripcion}}" placeholder="capturar datos" >
+ </div>
+
+<div class="input-group">
+ <span class="input-group-addon" >Precio</span>
+ <input class="form-control" type="text" name="precio" value="{{precio}}" placeholder="capturar datos" >
+ </div>
+</div>
+<input type="hidden" name="codigo"value="{{codigo}}"> 
+</div>
+<div class="btn-group" role="group">
+   <button type="submit" value="modificar" class="btn btn-success"> Actulizar</button>
+
+
+</form>
+
+{{/each}} 
+
