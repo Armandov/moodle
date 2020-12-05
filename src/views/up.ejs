@@ -1,0 +1,24 @@
+<%- include('../partials/header') -%>
+
+
+
+
+
+<div class="container" >
+<div class="row">
+<div class="col-md-7">       
+   <div class="card">
+       <div class="card-body">
+
+         <form action="/up/<%= data.codigo %>" method="POST" >
+        <input type="text" name="descripcion" placeholder="descripcion" class="form-control" value="<%= data.descripcion%>" >
+        <input type="text" name="precio" placeholder="precio" class="form-control" value="<%= data.precio%>" >
+        <button class="btn btn-success" type="submit" > Actualizar </button>
+        </form>
+     </div>   
+   </div> 
+  </div>
+ </div>
+</div>
+
+<%- include('../partials/footer') -%>
